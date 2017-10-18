@@ -11,46 +11,44 @@
   <title>NTitle</title>
 
   <!-- Bootstrap core CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-<<<<<<< HEAD
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">  
 
-  <!-- Custom styles for this template -->
-
-
-=======
->>>>>>> 60d2b474f938362b63490bab7df4f397b9c62b4e
+  <!-- custom CSS -->
+  <link rel="stylesheet" href="css/custom.css">
   
 </head>
 <body>
   <div class="container-fluid">
-  <div class="container">
-    <nav class="navbar navbar-toggleable-md">
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <a class="navbar-brand" href="#">Logo</a>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">ABOUT</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#">ECOSYSTEM</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#">BENEFITS</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#">TOKEN SALE</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#">FAQ</a>
-          </li>
-        </ul>
+    <div class="container">
+      <nav class="navbar navbar-toggleable-md">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+          <img src="img/logo-header.png" />
+        </a>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">ABOUT</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">ECOSYSTEM</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">BENEFITS</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">TOKEN SALE</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">FAQ</a>
+            </li>
+          </ul>
 
-      </div>
-    </nav>
-</div>
+        </div>
+      </nav>
+    </div>
     <section id="countdown">
       <div class="container">
         <div class="row">         
@@ -58,19 +56,19 @@
             <h2 class="section-title">TOKEN SALE COUNTDOWN</h2>
           </div>
           <div class="col-3">
-            <img src="" class="img-fluid">
+            <p id="days"></p>
             <h3>DAYS</h3>
           </div>
           <div class="col-3">
-            <img src="" class="img-fluid">
+            <p id="hours"></p>
             <h3>HOURS</h3>
           </div>
           <div class="col-3">
-            <img src="" class="img-fluid">
+            <p id="minutes"></p>
             <h3>MINUTES</h3>
           </div>
           <div class="col-3">
-            <img src="" class="img-fluid">
+            <p id="seconds"></p>
             <h3>SECONDS</h3>
           </div>
         </div>
@@ -79,7 +77,7 @@
     <section id="subscribe">
       <div class="container">
         <div class="row">
-          <div class="col-12">
+          <div class="col-12 text-center">
             <p>Subscribe and receive updates in your email</p>
             <div class="col-12">
               <input type="text" name="" placeholder="email@yourdomain.com"> 
@@ -283,8 +281,10 @@
   <section id="dates">
     <div class="container">
      <div class="row">
-       <div class="col-2">
-
+       <div class="col-12">
+        <h2 class="section-title">KEY DATES</h2> 
+       </div>
+       <div class="col-1">
        </div>
        <div class="col-2">
         <p class="date-number">17 <span>.</span></p>
@@ -547,6 +547,8 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="js/custom.js"></script>
 
 
 <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
