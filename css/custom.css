@@ -13,9 +13,10 @@ section {
 	text-align: -ms-center;
 	width: 100%;
 }
-#countdown{
-	background: url("../img/fondo-countdown.jpg") ;
-	background-size: cover;;
+.container-fluid.gral-wrapper {
+	background: url(../img/fondo-countdown.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 #invest{
 	background: url("../img/fondo-2.jpg") ;
