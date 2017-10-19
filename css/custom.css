@@ -19,6 +19,13 @@ section {
   background-repeat: no-repeat;
   background-size: 100%;
 }
+
+/*COUTDOWN*/
+#countdown .countdown-item {
+	background: url("../img/square-countdown.png");
+}
+
+
 #invest{
 	background: url("../img/fondo-2.jpg") ;
 	background-size: cover;;
