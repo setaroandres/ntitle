@@ -1,9 +1,12 @@
+body {
+		font-family: 'Raleway', sans-serif;
+}
+
 section {
 	padding: 100px 0;
 }
 
 .section-title {
-	font-family: 'Raleway', sans-serif;
 	font-weight: 100;
 	font-size: 38px;
 	letter-spacing: 4px;
@@ -13,7 +16,6 @@ section {
 	text-align: -ms-center;
 	width: 100%;
 	color: #fff;
-	padding-top: 40px;
 	padding-bottom: 40px;
 }
 .section-title-grey{
@@ -32,10 +34,32 @@ section {
 	color: #fff;
 }
 /*COUTDOWN*/
-#countdown .countdown-item {
-	background: url("../img/square-countdown.png");
+#countdown .countdown-items-wrapper {
+	text-align: center;
+	text-align: -webkit-center;
+	text-align: -moz-center;
+	text-align: -ms-center;
+	width: 100%;
 }
-
+#countdown .countdown-items-wrapper .countdown-item {
+	background: url("../img/square-countdown.png") no-repeat;
+  color: #fff;
+	display: inline-block;
+  height: 190px;
+	width: 190px;
+	margin: 0 20px;
+}
+#countdown .countdown-items-wrapper .countdown-item .value {
+  font-size: 100px;
+  font-weight: 100;
+}
+#countdown .countdown-items-wrapper .countdown-item .name {
+  color: #98edff;
+  font-weight: 600;
+}
+#countdown .countdown-items-wrapper .countdown-item p {
+  margin: 0;
+}
 /*INVEST*/
 #invest{
 	background: url("../img/fondo-2.jpg") ;
@@ -63,4 +87,21 @@ section {
 /*RECEIVE*/
 #recieve{
 	background: #000;
+}
+
+/*NAVBAR*/
+.nav-item a {
+	color: #fff;
+	font-weight: 100;
+}
+
+.navbar-brand span {
+    color: #d7d7d7;
+    font-weight: 600;
+    letter-spacing: 4px;
+    font-size: 25px;
+}
+
+.navbar-brand span .t {
+	font-size: 30px; 	
 }
