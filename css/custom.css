@@ -43,6 +43,7 @@ section {
 	background: url(../img/fondo-countdown.jpg);
 	background-repeat: no-repeat;
 	background-size: 100%;
+	padding: 0;
 }
 /*COUNTDOWN*/
 .date-month{
@@ -163,7 +164,6 @@ section {
 #recieve{
 	background: #000;
 }
-<<<<<<< HEAD
 
 /*NAVBAR*/
 .nav-item a {
@@ -183,12 +183,19 @@ section {
 }
 
 /*SUBSCRIBE*/
-#recieve input{
+input[type="text"]{
 	width: 345px;
 	height: 65px;
+	border: 1px solid #e6e6e6;
 	border-radius: 10px;
 	text-align: center;
 	color: #808080;
 	margin-bottom: 20px;
+}
+
+.sub-title {
+	color: #4784bf;
+	font-size: 18px;
+  font-weight: 600;
 }
 
