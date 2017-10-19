@@ -13,3 +13,15 @@ section {
 	text-align: -ms-center;
 	width: 100%;
 }
+#countdown{
+	background: url("../img/fondo-countdown.jpg") ;
+	background-size: cover;;
+}
+#invest{
+	background: url("../img/fondo-2.jpg") ;
+	background-size: cover;;
+}
+#team{
+	background: url("../img/fondo-team.jpg") ;
+	background-size: 100% 100%;;
+}
