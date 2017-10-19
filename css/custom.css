@@ -13,12 +13,25 @@ section {
 	text-align: -ms-center;
 	width: 100%;
 	color: #fff;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+.section-title-grey{
+	color: #808080;
 }
 .container-fluid.gral-wrapper {
 	background: url(../img/fondo-countdown.jpg);
-  background-repeat: no-repeat;
-  background-size: 100%;
+	background-repeat: no-repeat;
+	background-size: 100%;
 }
+/*COUNTDOWN*/
+.date-month{
+	color: #5eb5b8;
+}
+.date-text{
+	color: #fff;
+}
+/*INVEST*/
 #invest{
 	background: url("../img/fondo-2.jpg") ;
 	background-size: cover;;
@@ -36,4 +49,13 @@ section {
 }
 .team-member-rol{
 	color: #5eb5b8;
+}
+/*NEWS*/
+#news{
+	background: url("../img/fondo-news.jpg") ;
+	background-size: 100% 100%;;
+}
+/*RECEIVE*/
+#recieve{
+	background: #000;
 }
