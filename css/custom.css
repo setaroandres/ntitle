@@ -1,6 +1,20 @@
 section {
 	padding: 100px 0;
 }
+.no-gutter{
+	padding: 0;
+}
+.btn-blue{
+	width: 165px;
+	height: 75px;
+	border-radius: 12px;
+}
+.regular-text{
+	color: #fff;
+}
+.regular-grey-text{
+	color: #808080;
+}
 
 .section-title {
 	font-family: 'Raleway', sans-serif;
@@ -19,6 +33,10 @@ section {
 .section-title-grey{
 	color: #808080;
 }
+.section-subtitle{
+	text-align: left;
+	padding-top: 0;
+}
 .container-fluid.gral-wrapper {
 	background: url(../img/fondo-countdown.jpg);
 	background-repeat: no-repeat;
@@ -34,7 +52,64 @@ section {
 /*INVEST*/
 #invest{
 	background: url("../img/fondo-2.jpg") ;
-	background-size: cover;;
+	background-size: cover;
+}
+/*TERMS TOKEN AND DATES*/
+#graphsterms{
+	background: url("../img/fondo-graph.jpg") ;
+	background-size: 100% 100%;
+}
+.logo-centered{
+	position: absolute;
+	z-index: 99;
+	top: 49%;
+    left: 35%;
+}
+.sub-title-green{
+	color: #30c99d;
+}
+.list-green{
+
+}
+.sub-title-yellow{
+	color: #e7f920;
+}
+.list-yellow {
+
+}
+
+
+/*KEY DATES*/
+#dates{
+	background: url("../img/fondo-dates.jpg") ;
+	background-size: 100% 100%;
+}
+.date-number{
+	color: #fff;
+	font-size: 60px;
+}
+.date-number span{
+	color: #5eb5b8;
+	margin-top: -9px;
+	position: absolute;
+	top: -7px;
+	padding-left: 55px;
+}
+/*CONFERENCE*/
+.video-container{
+	background: url(../img/square-video.png);
+	background-size: cover;
+	width: 773px;
+	height: 454px;
+}
+.video-container iframe{
+	top: 17px;
+	position: absolute;
+	left: 32px;
+}
+.big-blue-text{
+	color: #5eb5b8;
+	font-size: 40px;
 }
 /*TEAM*/
 #team{
@@ -58,4 +133,13 @@ section {
 /*RECEIVE*/
 #recieve{
 	background: #000;
+}
+/*SUBSCRIBE*/
+#recieve input{
+	width: 345px;
+	height: 65px;
+	border-radius: 10px;
+	text-align: center;
+	color: #808080;
+	margin-bottom: 20px;
 }
