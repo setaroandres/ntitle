@@ -6,12 +6,13 @@ section {
 	font-family: 'Raleway', sans-serif;
 	font-weight: 100;
 	font-size: 38px;
-  letter-spacing: 4px;
+	letter-spacing: 4px;
 	text-align: center;
 	text-align: -webkit-center;
 	text-align: -moz-center;
 	text-align: -ms-center;
 	width: 100%;
+	color: #fff;
 }
 #countdown{
 	background: url("../img/fondo-countdown.jpg") ;
@@ -21,7 +22,17 @@ section {
 	background: url("../img/fondo-2.jpg") ;
 	background-size: cover;;
 }
+/*TEAM*/
 #team{
 	background: url("../img/fondo-team.jpg") ;
 	background-size: 100% 100%;;
+}
+.team-member-name{
+	color: #fff;
+	line-height: 2px;
+	font-size: 20px; 
+	margin-top: 15px;
+}
+.team-member-rol{
+	color: #5eb5b8;
 }
