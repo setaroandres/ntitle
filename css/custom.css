@@ -107,7 +107,11 @@ section {
 }
 /*ROADMAP*/
 #roadmap{
-	background: url("../img/fondo-roadmap.jpg") ;
+	background: #000;
+	color: #fff;
+}
+.milestone{
+	min-height: 200px;
 }
 /*SMART*/
 #smart{
