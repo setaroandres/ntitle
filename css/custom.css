@@ -1,5 +1,5 @@
 body {
-		font-family: 'Raleway', sans-serif;
+	font-family: 'Raleway', sans-serif;
 }
 
 section {
@@ -62,27 +62,79 @@ section {
 }
 #countdown .countdown-items-wrapper .countdown-item {
 	background: url("../img/square-countdown.png") no-repeat;
-  color: #fff;
+	color: #fff;
 	display: inline-block;
-  height: 190px;
+	height: 190px;
 	width: 190px;
 	margin: 0 20px;
 }
 #countdown .countdown-items-wrapper .countdown-item .value {
-  font-size: 100px;
-  font-weight: 100;
+	font-size: 100px;
+	font-weight: 100;
 }
 #countdown .countdown-items-wrapper .countdown-item .name {
-  color: #98edff;
-  font-weight: 600;
+	color: #98edff;
+	font-weight: 600;
 }
 #countdown .countdown-items-wrapper .countdown-item p {
-  margin: 0;
+	margin: 0;
 }
-/*INVEST*/
-#invest{
-	background: url("../img/fondo-2.jpg") ;
+/*SUBSCRIBE*/
+#subscribe{
+	background: url("../img/fondo-subscribe.jpg") ;
 	background-size: cover;
+}
+/*INVEST AND JOIN US*/
+#investjoin{
+	background: url("../img/fondo-joininvest.jpg") ;
+	background-size: cover;
+}
+/*ABOUT*/
+#about{
+	background: url("../img/fondo-about.jpg") ;
+}
+#about .video-container{
+	background: url(../img/square-video.png);
+	background-size: cover;
+	width: 667px;
+	height: 385px;
+	margin: 0 auto;
+}
+#about iframe{
+    top: 101px;
+    position: absolute;
+    left: 248px;
+}
+/*ROADMAP*/
+#roadmap{
+	background: url("../img/fondo-roadmap.jpg") ;
+}
+/*SMART*/
+#smart{
+	background: #181818;
+}
+.black-button{
+	border: 2px solid #fff;
+	border-radius: 2px;
+	background: #808080;
+}
+/*TECHNOLOGY*/
+#technology{
+	background: #000;
+}
+#technology img{
+	width: 100px;
+	padding-left: 20px;
+}
+/*DOCUMENTATION*/
+#documentation button{
+	margin-top: 25px;
+}
+#documentation a{
+	text-decoration: underline;
+}
+#documentation .legal-text{
+	margin-top: 35px;
 }
 /*TERMS TOKEN AND DATES*/
 #graphsterms{
@@ -92,8 +144,8 @@ section {
 .logo-centered{
 	position: absolute;
 	z-index: 99;
-	top: 49%;
-    left: 35%;
+	top: 46%;
+	left: 35%;
 }
 .sub-title-green{
 	color: #30c99d;
@@ -172,10 +224,10 @@ section {
 }
 
 .navbar-brand span {
-    color: #d7d7d7;
-    font-weight: 600;
-    letter-spacing: 4px;
-    font-size: 25px;
+	color: #d7d7d7;
+	font-weight: 600;
+	letter-spacing: 4px;
+	font-size: 25px;
 }
 
 .navbar-brand span .t {
@@ -196,6 +248,6 @@ input[type="text"]{
 .sub-title {
 	color: #4784bf;
 	font-size: 18px;
-  font-weight: 600;
+	font-weight: 600;
 }
 

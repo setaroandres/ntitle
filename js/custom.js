@@ -29,3 +29,28 @@ var x = setInterval(function() {
     document.getElementById("countdown-clock").innerHTML = "EXPIRED";
   }
 }, 1000);
+
+
+$(document).ready(function(){
+  $(".graph-part").mouseover(function(){
+       //console.log($(this).parent().parent().find(".graph-part").not(this));
+       $(this).parent().parent().find(".graph-part").not(this).animate({
+        opacity: 0.3
+      }, 1000, function() {
+
+      });
+
+
+     });
+
+  $(".graph-part").mouseout(function(){
+       //console.log($(this).parent().parent().find(".graph-part").not(this));
+       $(this).parent().parent().find(".graph-part").not(this).animate({
+        opacity: 1
+      }, 1000, function() {
+
+      });
+
+       
+     });
+});
