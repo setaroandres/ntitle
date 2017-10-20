@@ -101,9 +101,9 @@ section {
 	margin: 0 auto;
 }
 #about iframe{
-    top: 101px;
-    position: absolute;
-    left: 248px;
+	top: 101px;
+	position: absolute;
+	left: 248px;
 }
 /*ROADMAP*/
 #roadmap{
@@ -118,6 +118,29 @@ section {
 	border-radius: 2px;
 	background: #808080;
 }
+#smart .nav-link{
+	font-weight: 700;
+	height: 90px;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	border: 1px solid #808080;
+	min-width: 200px;
+	padding-top: 20px;
+
+}
+#smart .nav-link.active{
+	color: #fff;
+	background-color: transparent;
+	border-color: #ddd #ddd #fff;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	border: 1px solid #808080;
+	border-bottom: none;
+}
+#smart .nav-tabs{
+	border-bottom: none;
+}
+
 /*TECHNOLOGY*/
 #technology{
 	background: #000;
