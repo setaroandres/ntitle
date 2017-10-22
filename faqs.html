@@ -20,8 +20,10 @@
   <link rel="stylesheet" href="css/custom.css">
   
 </head>
-<body>
+<body id="faqs">
+
   <div class="container-fluid gral-wrapper">
+    
     <div class="container">
       <nav class="navbar navbar-toggleable-md">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -54,17 +56,18 @@
       </nav>
     </div>
 
-    <section id="faqs">
+    <section>
 
       <div class="container text-center">
+        <h1 class="section-title">FAQS</h1>
         <div class="row">
           <h2 class="section-title">UNDERSANDING NTITLE</h2>
           <div id="accordion_top" role="tablist" aria-multiselectable="true">
             <div class="card">
               <div class="card-header" role="tab" id="headingOne_top">
                 <h5 class="mb-0">
-                  <a data-toggle="collapse" data-parent="#accordion_top" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    Collapsible Group Item #1
+                  <a data-toggle="collapse" data-parent="#accordion_top" href="#collapseOne_top" aria-expanded="true" aria-controls="collapseOne">
+                    How will ntitle work?
                   </a>
                 </h5>
               </div>
@@ -78,8 +81,8 @@
             <div class="card">
               <div class="card-header" role="tab" id="headingTwo_top">
                 <h5 class="mb-0">
-                  <a class="collapsed" data-toggle="collapse" data-parent="#accordion_top" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    Collapsible Group Item #2
+                  <a class="collapsed" data-toggle="collapse" data-parent="#accordion_top" href="#collapseTwo_top" aria-expanded="false" aria-controls="collapseTwo">
+                    What does Drm means?
                   </a>
                 </h5>
               </div>
@@ -92,8 +95,8 @@
             <div class="card">
               <div class="card-header" role="tab" id="headingThree_top">
                 <h5 class="mb-0">
-                  <a class="collapsed" data-toggle="collapse" data-parent="#accordion_top" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    Collapsible Group Item #3
+                  <a class="collapsed" data-toggle="collapse" data-parent="#accordion_top" href="#collapseThree_top" aria-expanded="false" aria-controls="collapseThree">
+                    What is a bitcoin
                   </a>
                 </h5>
               </div>
@@ -123,7 +126,7 @@
               <div class="card-header" role="tab" id="headingOne">
                 <h5 class="mb-0">
                   <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    Collapsible Group Item #1
+                    How will ntitle work?
                   </a>
                 </h5>
               </div>
@@ -138,7 +141,7 @@
               <div class="card-header" role="tab" id="headingTwo">
                 <h5 class="mb-0">
                   <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    Collapsible Group Item #2
+                    What does Drm means?
                   </a>
                 </h5>
               </div>
@@ -152,7 +155,7 @@
               <div class="card-header" role="tab" id="headingThree">
                 <h5 class="mb-0">
                   <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    Collapsible Group Item #3
+                    What is a bitcoin
                   </a>
                 </h5>
               </div>
@@ -165,46 +168,40 @@
           </div>
         </div>
       </div>
-
     </section>
 
-    <div id="graphsterms">
-
-      <div id="investjoin">
-
-        <div class="container">
-          <div class="row text-center">
-            <div class="col-12">
-              <img src="img/logo-header.png" class="img-fluid">
-            </div>
-          </div>
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-12">
+          <img src="img/logo-header.png" class="img-fluid">
         </div>
-
-        <section id="join">
-         <div class="container">
-          <div class="row">
-            <h2 class="section-title">BE PART OF OUR COMMUNITY</h2>
-            <div class="col-3 text-center">
-              <img src="img/icon-fb.png" class="img-fluid">
-            </div>
-            <div class="col-3 text-center">
-              <img src="img/icon-fb.png" class="img-fluid">
-            </div>
-            <div class="col-3 text-center">
-              <img src="img/icon-yt.png" class="img-fluid">
-            </div>
-            <div class="col-3 text-center">
-              <img src="img/icon-go.png" class="img-fluid">
-            </div>
-          </div>
-        </div>
-      </section>
+      </div>
     </div>
+
+    <section id="join">
+      <div class="container">
+        <div class="row">
+          <h2 class="section-title">BE PART OF OUR COMMUNITY</h2>
+          <div class="col-3 text-center">
+            <img src="img/icon-fb.png" class="img-fluid">
+          </div>
+          <div class="col-3 text-center">
+            <img src="img/icon-fb.png" class="img-fluid">
+          </div>
+          <div class="col-3 text-center">
+            <img src="img/icon-yt.png" class="img-fluid">
+          </div>
+          <div class="col-3 text-center">
+            <img src="img/icon-go.png" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section id="recieve">
       <div class="container text-center">
         <div class="row">
-        
+
           <h2 class="section-title">DO YOU HAV ANY QUESTION?</h2>
           <form>
             <div class="form-group">
@@ -230,26 +227,20 @@
         </div>
       </div>
     </section>
+
   </div>
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="js/custom.js"></script>
 
 
+  <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/holder/2.9.4/holder.min.js"></script>
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="https://maxcdn.bootstrapcdn.com/js/ie10-viewport-bug-workaround.js"></script>
 
-</div>
-
-
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-
-<script type="text/javascript" src="js/custom.js"></script>
-
-
-<!-- Just to make our placeholder images work. Don't actually copy the next line! -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/holder/2.9.4/holder.min.js"></script>
-<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-<script src="https://maxcdn.bootstrapcdn.com/js/ie10-viewport-bug-workaround.js"></script>
 </body>
 </html>

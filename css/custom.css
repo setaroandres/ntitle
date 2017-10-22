@@ -262,7 +262,8 @@ section {
 }
 
 /*SUBSCRIBE*/
-input[type="text"]{
+input[type="text"],
+input[type="email"] {
 	width: 345px;
 	height: 65px;
 	border: 1px solid #e6e6e6;
@@ -278,3 +279,46 @@ input[type="text"]{
 	font-weight: 600;
 }
 
+/*FAQS*/ 
+
+#faqs .container-fluid.gral-wrapper {
+	background: #00335B;
+}
+
+#faqs #accordion_top .card,
+#faqs #accordion .card {
+	border: none;
+    background-color: transparent;
+}
+
+#faqs #accordion_top,
+#faqs #accordion {
+	width: 100%;
+}
+
+#faqs #accordion_top .card .card-header,
+#faqs #accordion .card .card-header {
+	background: transparent;
+    border: none;
+    border-radius: 0;
+}
+
+#faqs #accordion_top .card .card-block,
+#faqs #accordion .card .card-block {
+	color: #fff;
+}
+
+#faqs #accordion_top .card .card-header h5 a,
+#faqs #accordion .card .card-header h5 a {
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 100;
+	font-size: 26px;
+}
+
+#faqs #accordion_top .card .card-header h5 a:hover,
+#faqs #accordion_top .card .card-header h5 a:focus,
+#faqs #accordion .card .card-header h5 a:hover, 
+#faqs #accordion .card .card-header h5 a:focus {
+	text-decoration: none;
+}
