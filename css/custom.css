@@ -69,12 +69,12 @@ section {
 	background: url("../img/square-countdown.png") no-repeat;
 	color: #fff;
 	display: inline-block;
-	height: 190px;
-	width: 190px;
-	margin: 0 20px;
+	height: 138px;
+	width: 138px;
+	margin: 0 8px;
 }
 #countdown .countdown-items-wrapper .countdown-item .value {
-	font-size: 100px;
+	font-size: 68px;
 	font-weight: 100;
 }
 #countdown .countdown-items-wrapper .countdown-item .name {
@@ -86,13 +86,17 @@ section {
 }
 /*SUBSCRIBE*/
 #subscribe{
-	background: url("../img/fondo-subscribe.jpg") ;
-	background-size: cover;
+	background: url("../img/fondo-subscribe.png") ;
+	background-size: contain;
+	background-position-y: -1px;
 }
 /*INVEST AND JOIN US*/
 #investjoin{
 	background: url("../img/fondo-joininvest.jpg") ;
-	background-size: cover;
+	background-size: 100% 100%;
+	background-position-y: -1px;
+	background-repeat: no-repeat;
+
 }
 /*ABOUT*/
 #about{
@@ -120,10 +124,10 @@ section {
 	min-height: 200px;
 }
 .milestone-bottom > div {
-    align-self: flex-end;
+	align-self: flex-end;
 }
 .milestone-center > div {
-    align-self: center;
+	align-self: center;
 }
 .milestone ul {
 	font-size: 14px;
@@ -136,7 +140,7 @@ section {
 	margin-top: -115px;
 }
 #roadmap .row-bottom-roadmap {
-margin-top: -75px;
+	margin-top: -75px;
 }
 
 
