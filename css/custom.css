@@ -8,6 +8,9 @@ section {
 .no-gutter{
 	padding: 0;
 }
+.relative {
+	position: relative;
+}
 .btn-blue{
 	width: 230px;
 	height: 72px;
@@ -64,8 +67,7 @@ section {
 	color: #fff;
 }
 /*COUTDOWN*/
-#countdown,
-#dates {
+#countdown {
 	padding-top: 35px;
 }
 #countdown .countdown-items-wrapper {
@@ -223,13 +225,20 @@ section#join {
 	background-size: 100% 100%;
 }
 #terms ol p {
-	font-size: 12px;
+	font-size: 13px;
+}
+section#graph {
+	padding-top: 25px;
+}
+section#graph .section-title {
+	padding-bottom: 0;
 }
 .logo-centered{
 	position: absolute;
 	z-index: 99;
-	top: 46%;
-	left: 35%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 .sub-title-green,
 .sub-title-yellow {
@@ -238,6 +247,11 @@ section#join {
 }
 .sub-title-yellow { 
 	color: #e7f920;
+}
+
+.list-green,
+.list-yellow {
+	padding-left: 15px;
 }
 
 .list-green li,
@@ -254,6 +268,7 @@ section#join {
 #dates{
 	background: url("../img/fondo-dates.jpg") ;
 	background-size: 100% 100%;
+	padding-top: 20px;
 }
 .date-number {
 	color: #fff;
