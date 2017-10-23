@@ -3,17 +3,18 @@ body {
 }
 
 section {
-	padding: 100px 0;
+	padding: 100px 0 75px;
 }
 .no-gutter{
 	padding: 0;
 }
 .btn-blue{
 	width: 230px;
-	height: 78px;
-	border-radius: 12px;
+	height: 72px;
+	border-radius: 10px;
 	font-size: 18px;
 	font-weight: 400;
+	margin: 30px 0 0;
 }
 .black-button{
 	border: 4px solid #fff;
@@ -22,8 +23,9 @@ section {
 	width: 245px;
 	height: 85px;
 }
-.regular-text{
+.regular-text {
 	color: #fff;
+	font-weight: 300;
 }
 .regular-grey-text{
 	color: #808080;
@@ -41,10 +43,10 @@ section {
 	color: #fff;
 	padding-bottom: 40px;
 }
-.section-title-grey{
+.section-title-grey {
 	color: #808080;
 }
-.section-subtitle{
+.section-subtitle {
 	text-align: left;
 	padding-top: 0;
 }
@@ -62,8 +64,9 @@ section {
 	color: #fff;
 }
 /*COUTDOWN*/
-#countdown {
-	padding-top: 20px;
+#countdown,
+#dates {
+	padding-top: 35px;
 }
 #countdown .countdown-items-wrapper {
 	text-align: center;
@@ -74,15 +77,18 @@ section {
 }
 #countdown .countdown-items-wrapper .countdown-item {
 	background: url("../img/square-countdown.png") no-repeat;
+	background-size: cover;
 	color: #fff;
 	display: inline-block;
-	height: 138px;
-	width: 138px;
+	height: 150px;
 	margin: 0 8px;
+	width: 165px;
 }
 #countdown .countdown-items-wrapper .countdown-item .value {
-	font-size: 68px;
+	font-size: 90px;
 	font-weight: 100;
+	line-height: 100%;
+	margin-bottom: 20px; 
 }
 #countdown .countdown-items-wrapper .countdown-item .name {
 	color: #98edff;
@@ -92,18 +98,22 @@ section {
 	margin: 0;
 }
 /*SUBSCRIBE*/
-#subscribe{
+#subscribe {
 	background: url("../img/fondo-subscribe.png") ;
 	background-size: contain;
 	background-position-y: -1px;
 }
+#subscribe .container {
+	padding-top: 25px;
+}
 /*INVEST AND JOIN US*/
-#investjoin{
+#investjoin {
 	background: url("../img/fondo-joininvest.jpg") ;
 	background-size: 100% 100%;
-	background-position-y: -1px;
 	background-repeat: no-repeat;
-
+}
+section#join {
+	padding-top: 35px; 
 }
 /*ABOUT*/
 #about{
@@ -245,17 +255,30 @@ section {
 	background: url("../img/fondo-dates.jpg") ;
 	background-size: 100% 100%;
 }
-.date-number{
+.date-number {
 	color: #fff;
-	font-size: 60px;
+	font-size: 75px;
+	font-weight: 100;
+	margin-bottom: 0;
 }
-.date-number span{
+.date-number span {
 	color: #5eb5b8;
 	margin-top: -9px;
 	position: absolute;
 	top: -7px;
 	padding-left: 55px;
 }
+.month,
+.title-news {
+	color: #5eb5b8;
+	font-size: 18px;
+}
+.date-text,
+.text-news {
+	color: #fff;
+	font-size: 12px;
+}
+
 /*CONFERENCE*/
 .video-container{
 	background: url(../img/square-video.png);
