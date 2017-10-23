@@ -110,7 +110,7 @@ $(".graph-part").mouseout(function(){
      });
 
 
-<<<<<<< HEAD
+
 $('.mile-item').hover(function() {
 
   $(this).stop().animate({
