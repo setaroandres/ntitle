@@ -309,6 +309,11 @@ section#graph .section-title {
 .big-blue-text{
 	color: #5eb5b8;
 	font-size: 40px;
+	font-weight: 700;
+}
+#conferences .section-subtitle {
+	font-size: 48px;
+    padding-bottom: 10px;
 }
 /*TEAM*/
 #team{
@@ -370,8 +375,24 @@ input[type="email"] {
 	font-weight: 300;
 }
 
-/*FAQS*/ 
+/*POPOVER*/
 
+.popover.bs-tether-element-attached-bottom, 
+.popover.popover-top {
+  margin-top: -32px;
+  text-align: center;
+  text-align: -webkit-center;
+  text-align: -moz-center;
+  text-align: -ms-center;
+}
+
+.popover.bs-tether-element-attached-bottom img, 
+.popover.popover-top img {
+  max-width: 20%;
+  padding: 0 5px;
+}
+
+/*FAQS*/ 
 #faqs .container-fluid.gral-wrapper {
 	background: #00335B;
 }
