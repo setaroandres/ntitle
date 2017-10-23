@@ -118,8 +118,13 @@ section {
 }
 #about iframe{
 	top: 101px;
-	position: absolute;
 	left: 248px;
+	position: absolute;
+}
+#about .button-video{
+	top: 229px;
+	position: absolute;
+	left: 519px;
 }
 /*ROADMAP*/
 #roadmap {
@@ -149,7 +154,10 @@ section {
 #roadmap .row-bottom-roadmap {
 	margin-top: -75px;
 }
-
+.mile-item{
+	z-index: 999;
+	position: relative;
+}
 
 /*SMART*/
 #smart{
@@ -189,7 +197,7 @@ section {
 
 /*TECHNOLOGY*/
 #technology{
-	background: #000;
+	background: #181818;
 }
 #technology img{
 	width: 100px;
@@ -263,10 +271,15 @@ section {
 	width: 773px;
 	height: 454px;
 }
-.video-container iframe{
-	top: 17px;
+#conferences iframe{
+	top: 13px;
 	position: absolute;
-	left: 32px;
+	left: 28px;
+}
+#conferences .button-video2{
+	top: 173px;
+	position: absolute;
+	left: 348px;
 }
 .big-blue-text{
 	color: #5eb5b8;
@@ -276,6 +289,13 @@ section {
 #team{
 	background: url("../img/fondo-team.jpg") ;
 	background-size: 100% 100%;;
+}
+#team .section-title{
+	margin-bottom: 50px;
+	margin-top: 50px;
+}
+#team .row{
+	margin-bottom: 50px;
 }
 .team-member-name{
 	color: #fff;
@@ -374,4 +394,11 @@ input[type="email"] {
 #faqs #accordion .card .card-header h5 a:hover, 
 #faqs #accordion .card .card-header h5 a:focus {
 	text-decoration: none;
+}
+#footer{
+	background: url("../img/fondo-footer.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	padding: 50px;
+	
 }
