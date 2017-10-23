@@ -9,9 +9,11 @@ section {
 	padding: 0;
 }
 .btn-blue{
-	width: 165px;
-	height: 75px;
+	width: 230px;
+	height: 78px;
 	border-radius: 12px;
+	font-size: 18px;
+	font-weight: 400;
 }
 .regular-text{
 	color: #fff;
@@ -53,6 +55,9 @@ section {
 	color: #fff;
 }
 /*COUTDOWN*/
+#countdown {
+	padding-top: 20px;
+}
 #countdown .countdown-items-wrapper {
 	text-align: center;
 	text-align: -webkit-center;
@@ -106,13 +111,35 @@ section {
 	left: 248px;
 }
 /*ROADMAP*/
-#roadmap{
+#roadmap {
 	background: #000;
 	color: #fff;
 }
-.milestone{
+.milestone {
+	display: flex;
 	min-height: 200px;
 }
+.milestone-bottom > div {
+    align-self: flex-end;
+}
+.milestone-center > div {
+    align-self: center;
+}
+.milestone ul {
+	font-size: 14px;
+	padding-left: 0;
+}
+#roadmap .row-top-roadmap {
+	
+}
+#roadmap .row-middle-roadmap {
+	margin-top: -115px;
+}
+#roadmap .row-bottom-roadmap {
+margin-top: -75px;
+}
+
+
 /*SMART*/
 #smart{
 	background: #181818;
@@ -122,7 +149,13 @@ section {
 	border-radius: 2px;
 	background: #808080;
 }
-#smart .nav-link{
+#smart .nav-item {
+	padding-right: 10px;
+}
+#smart .nav-item:last-child {
+	padding-right: 0px;
+}
+#smart .nav-link {
 	font-weight: 700;
 	height: 90px;
 	border-top-left-radius: 15px;
@@ -135,14 +168,11 @@ section {
 #smart .nav-link.active{
 	color: #fff;
 	background-color: transparent;
-	border-color: #ddd #ddd #fff;
-	border-top-left-radius: 15px;
-	border-top-right-radius: 15px;
-	border: 1px solid #808080;
-	border-bottom: none;
+	border-bottom: 1px solid #181818; 
 }
 #smart .nav-tabs{
-	border-bottom: none;
+	border: none;
+	border-bottom: 1px solid #808080;
 }
 
 /*TECHNOLOGY*/
@@ -264,19 +294,20 @@ section {
 /*SUBSCRIBE*/
 input[type="text"],
 input[type="email"] {
-	width: 345px;
-	height: 65px;
 	border: 1px solid #e6e6e6;
 	border-radius: 10px;
-	text-align: center;
 	color: #808080;
+	font-size: 19px;
+	height: 65px;
 	margin-bottom: 20px;
+	text-align: center;
+	width: 45%;
 }
 
 .sub-title {
 	color: #4784bf;
-	font-size: 18px;
-	font-weight: 600;
+	font-size: 24px;
+	font-weight: 300;
 }
 
 /*FAQS*/ 
@@ -288,7 +319,7 @@ input[type="email"] {
 #faqs #accordion_top .card,
 #faqs #accordion .card {
 	border: none;
-    background-color: transparent;
+	background-color: transparent;
 }
 
 #faqs #accordion_top,
@@ -299,8 +330,8 @@ input[type="email"] {
 #faqs #accordion_top .card .card-header,
 #faqs #accordion .card .card-header {
 	background: transparent;
-    border: none;
-    border-radius: 0;
+	border: none;
+	border-radius: 0;
 }
 
 #faqs #accordion_top .card .card-block,
