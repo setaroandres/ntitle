@@ -285,10 +285,7 @@ section#graph .section-title {
 	margin-bottom: 0;
 }
 .date-number span {
-	color: #5eb5b8;
-	margin-top: -9px;
 	position: absolute;
-	top: -7px;
 	padding-left: 55px;
 }
 .month,
