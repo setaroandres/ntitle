@@ -110,6 +110,7 @@ $(".graph-part").mouseout(function(){
      });
 
 
+<<<<<<< HEAD
 $('.mile-item').hover(function() {
 
   $(this).stop().animate({
@@ -122,25 +123,6 @@ $('.mile-item').hover(function() {
     opacity: 1
   });
 });
-
-
-
-  /*$(".mile-item").mouseover(function(){
-    console.log("over item");
-    $(this).parent().parent().find(".mile-item").not(this).animate({
-      opacity: 0
-    }, 1000, function() {
-      $(".mile-item").mouseout(function(){
-       $(this).parent().parent().find(".mile-item").not(this).animate({
-        opacity: 1
-      }, 1000, function() {
-
-      });
-     });
-    });
-});*/
-
-
 
 
 });
