@@ -108,6 +108,7 @@ section {
 	background: url("../img/fondo-subscribe.png") ;
 	background-size: contain;
 	background-position-y: -1px;
+	padding: 90px 0 35px;
 }
 #subscribe .container {
 	padding-top: 25px;
@@ -143,7 +144,8 @@ section#join {
 	left: 519px;
 }
 /*ROADMAP*/
-#roadmap {
+#roadmap,
+#roadmap-mobile {
 	background: #000;
 	color: #fff;
 }
