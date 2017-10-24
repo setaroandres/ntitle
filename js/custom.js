@@ -120,88 +120,84 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
 $(document).ready(function(){
 
-   $('.graph-part').hover(function() {
+window.sr = ScrollReveal();
+sr.reveal('.graph-part');
+//sr.reveal('.bar');
 
-    $(this).stop().animate({
-      opacity: 1
-    }).parent().parent().parent().find(".graph-part").not(this).stop().animate({
-      opacity: 0.3
-    });
-  }, function() {
-    $(".graph-part").not(this).stop().animate({
-      opacity: 1
-    });
+$('nav li').mouseenter(function(){
+
+  $(this).find('.animate').animate({
+    width: '100%'
+}, 100);
+});
+$('nav li').mouseout(function(){
+  $(this).find('.animate').animate({ 
+    marginLeft: '100%',
+    width: '0px'
+  },100, function () {
+
+    setTimeout(function(){ $('.animate').css("margin-left","0px"); }, 300);
+
   });
+});
 
-/*   
-  $(".graph-part").mouseover(function(){
-       //console.log($(this).parent().parent().find(".graph-part").not(this));
-       $(this).parent().parent().find(".graph-part").not(this).animate({
-        opacity: 0.3
-      }, 1000, function() {
+$('.graph-part').hover(function() {
 
-      });
+  $(this).stop().animate({
+    opacity: 1
+  }).parent().parent().parent().find(".graph-part").not(this).stop().animate({
+    opacity: 0.3
+  });
+}, function() {
+  $(".graph-part").not(this).stop().animate({
+    opacity: 1
+  });
+});
 
 
-     });
+$('.mile-item').hover(function() {
 
+  $(this).stop().animate({
+    opacity: 1
+  }).parent().parent().parent().find(".mile-item").not(this).stop().animate({
+    opacity: 0
+  });
+}, function() {
+  $("#roadmap .mile-item").not(this).stop().animate({
+    opacity: 1
+  });
+});
+/*
+$(window).scroll(function() {
+ var hT = $('#graph').offset().top,
+ hH = $('#graph').outerHeight(),
+ wH = $(window).height(),
+ wS = $(this).scrollTop();
+ if (wS > (hT+hH-wH)){
+   console.log('H1 on the view!');
+   $(".graph-start-up").css("position", "inherit");
+   $(".graph-start-up").animate({
+    top: 0,
+    left: 0
+  }, 2000,function(){
 
-  $(".graph-part").mouseout(function(){
-       //console.log($(this).parent().parent().find(".graph-part").not(this));
-       $(this).parent().parent().find(".graph-part").not(this).animate({
-        opacity: 1
-      }, 1000, function() {
+  });
+   $(".graph-start-down").css("position", "inherit");
+   $(".graph-start-down").animate({
+    top: 0,
+    left: 0
+  }, 2000,function(){
 
-      });
+  });
+   $(".graph-start-left").css("position", "inherit");
+   $(".graph-start-left").animate({
+    top: 0,
+    left: 0
+  }, 2000,function(){
 
-       
-     });
+  });
+ }
+});
 */
-
-
-  $('.mile-item').hover(function() {
-
-    $(this).stop().animate({
-      opacity: 1
-    }).parent().parent().parent().find(".mile-item").not(this).stop().animate({
-      opacity: 0
-    });
-  }, function() {
-    $("#roadmap .mile-item").not(this).stop().animate({
-      opacity: 1
-    });
-  });
-
-  $(window).scroll(function() {
-   var hT = $('#graph').offset().top,
-   hH = $('#graph').outerHeight(),
-   wH = $(window).height(),
-   wS = $(this).scrollTop();
-   if (wS > (hT+hH-wH)){
-     console.log('H1 on the view!');
-     $(".graph-start-up").css("position", "inherit");
-     $(".graph-start-up").animate({
-      top: 0,
-      left: 0
-    }, 2000,function(){
-
-    });
-     $(".graph-start-down").css("position", "inherit");
-     $(".graph-start-down").animate({
-      top: 0,
-      left: 0
-    }, 2000,function(){
-
-    });
-     $(".graph-start-left").css("position", "inherit");
-     $(".graph-start-left").animate({
-      top: 0,
-      left: 0
-    }, 2000,function(){
-
-    });
-   }
- });
-
 
 });

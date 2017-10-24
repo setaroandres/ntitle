@@ -1,10 +1,32 @@
 body {
 	font-family: 'Raleway', sans-serif;
 }
-
 section {
 	padding: 100px 0 75px;
 }
+
+nav li{
+	position: relative;
+}
+nav li a{
+	position: relative;
+	z-index: 13
+}
+nav li a:hover{
+	color: #3666ab;
+}
+.animate {
+	height: 10px;
+	width: 0px;
+	background: url("../img/menu-lines.png");
+	background-repeat: repeat-x;
+	opacity: 0.2;
+	z-index: 2;	
+	position: absolute;
+	top: 38%;
+	left: 0;
+}
+
 .logo-blink{
 	width: 50px;
 	padding-bottom: 8px;
@@ -523,13 +545,13 @@ input[type="email"] {
 		font-size: 30px;
 	}
 	#smart .nav-link {
-    font-size: 8px;
-    padding: 20px 6px;
-    height: 75px;
-   	line-height: 12px;
-  }
-  #smart .nav-item {
-    padding-right: 4px;
+		font-size: 8px;
+		padding: 20px 6px;
+		height: 75px;
+		line-height: 12px;
+	}
+	#smart .nav-item {
+		padding-right: 4px;
 	}
 	#smart .tab-content>.tab-pane {
 		padding: 15px;

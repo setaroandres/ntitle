@@ -1,0 +1,58 @@
+<html>
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$('.blue').mouseenter(function(){
+			$('.animate').addClass("move");
+		});
+		$('.blue').mouseout(function(){
+			//$(this).removeClass("move");
+			$('.animate').addClass("move-right");
+		});
+	});
+	</script>
+
+	<style type="text/css">
+	
+	.animate {
+		height: 10px;
+		width: 0px;
+		background-color: #c00;
+		-webkit-transition: all 1s ease;
+		-moz-transition: all 1s ease;
+		-o-transition: all 1s ease;
+		-ms-transition: all 1s ease;
+		transition: all 1s ease;
+		position: absolute;
+		top: 30%;
+		left: 0;
+	}
+
+	.animate.move {
+
+		width: 100%;
+		/*margin-left: -100px; .animate width*/
+	}
+	.animate.move-right{
+		margin-left: 100%;
+
+	}
+	.blue{
+		top: 0px; 
+		left:0px; 
+		background-color: blue; 
+		width: 10px; 
+		height: 10px;
+	}
+	</style>
+</head>
+<body>
+	<div>
+		HOLAs
+		<div class="animate"></div> 
+	</div>
+	<div class="blue" style=""></div>
+</body>
+</html>
