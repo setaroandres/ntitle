@@ -122,6 +122,9 @@ $(document).ready(function(){
 
 window.sr = ScrollReveal();
 sr.reveal('.graph-part');
+sr.reveal('.section-title');
+sr.reveal('.regular-text');
+sr.reveal('.img-fluid');
 //sr.reveal('.bar');
 
 $('nav li').mouseenter(function(){
@@ -141,8 +144,15 @@ $('nav li').mouseout(function(){
   });
 });
 
-$('.graph-part').hover(function() {
+ $('.graph-part').hover(function() {
+        $(this).parent().parent().parent().find(".graph-part").not(this).addClass('transition');
+    
+    }, function() {
+        $(this).parent().parent().parent().find(".graph-part").not(this).removeClass('transition');
+    });
 
+$('.graph-part').hover(function() {
+   
   $(this).stop().animate({
     opacity: 1
   }).parent().parent().parent().find(".graph-part").not(this).stop().animate({
@@ -152,6 +162,7 @@ $('.graph-part').hover(function() {
   $(".graph-part").not(this).stop().animate({
     opacity: 1
   });
+  //$(".graph-part").removeClass('transition');
 });
 
 
