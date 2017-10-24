@@ -84,7 +84,7 @@ section {
 	display: inline-block;
 	height: 150px;
 	margin: 0 8px;
-	width: 165px;
+	width: 14.5%;
 }
 #countdown .countdown-items-wrapper .countdown-item .value {
 	font-size: 90px;
@@ -187,7 +187,7 @@ section#join {
 	border-top-left-radius: 15px;
 	border-top-right-radius: 15px;
 	border: 1px solid #808080;
-	min-width: 200px;
+	/*min-width: 200px;*/
 	padding-top: 20px;
 
 }
@@ -213,7 +213,6 @@ section#join {
 }
 #technology img{
 	width: 100px;
-	padding-left: 20px;
 }
 /*DOCUMENTATION*/
 #documentation .btn-blue {
@@ -323,7 +322,7 @@ section#graph .section-title {
 }
 #conferences .section-subtitle {
 	font-size: 48px;
-    padding-bottom: 10px;
+	padding-bottom: 10px;
 }
 /*TEAM*/
 #team{
@@ -396,17 +395,17 @@ input[type="email"] {
 
 .popover.bs-tether-element-attached-bottom, 
 .popover.popover-top {
-  margin-top: -32px;
-  text-align: center;
-  text-align: -webkit-center;
-  text-align: -moz-center;
-  text-align: -ms-center;
+	margin-top: -32px;
+	text-align: center;
+	text-align: -webkit-center;
+	text-align: -moz-center;
+	text-align: -ms-center;
 }
 
 .popover.bs-tether-element-attached-bottom img, 
 .popover.popover-top img {
-  max-width: 20%;
-  padding: 0 5px;
+	max-width: 20%;
+	padding: 0 5px;
 }
 
 /*FAQS*/ 
@@ -460,3 +459,62 @@ input[type="email"] {
 	
 }
 
+
+@media screen and (max-width: 767px) {
+	.container-fluid.gral-wrapper {
+		background: #08293C;
+	}
+	#countdown .countdown-items-wrapper .countdown-item .value {
+		font-size: 50px;
+	}
+	#countdown .countdown-items-wrapper .countdown-item {
+		height: 105px;
+		margin: 0 3px;
+		padding-top: 10px;
+		width: 20%;
+	}
+	#countdown .countdown-items-wrapper .countdown-item .name {
+	}
+	#subscribe {
+		background: #fff;
+		padding: 10px 0 75px;
+	}
+	input[type="text"], 
+	input[type="email"] {
+		width: 100%;
+	}
+	#smart .nav-link {
+		font-weight: 300;
+		padding-top: 20px;
+		line-height: 18px;
+		font-size: 12px;
+	}
+}
+
+
+@media screen and (max-width: 481px) {
+	#countdown .countdown-items-wrapper .countdown-item {
+		height: 105px;
+	}
+	#countdown .countdown-items-wrapper .countdown-item .value {
+		font-size: 40px;
+	}
+	#countdown .countdown-items-wrapper .countdown-item .name {
+		font-size: 12px;
+	}
+	.section-title {
+		font-size: 30px;
+	}
+	#smart .nav-link {
+    font-size: 8px;
+    padding: 20px 6px;
+    height: 75px;
+   	line-height: 12px;
+  }
+  #smart .nav-item {
+    padding-right: 4px;
+	}
+	#smart .tab-content>.tab-pane {
+		padding: 15px;
+	}
+}
