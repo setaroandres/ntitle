@@ -530,6 +530,17 @@ input[type="email"] {
 		line-height: 18px;
 		font-size: 12px;
 	}
+	.milestone {
+		display: block;
+		height: 185px;
+    min-height: 185px;
+	}
+	.swan {
+		margin-top: -60px;
+	}
+	#documentation .doc-item {
+		margin: 45px 0;
+	}
 }
 
 
@@ -557,5 +568,16 @@ input[type="email"] {
 	}
 	#smart .tab-content>.tab-pane {
 		padding: 15px;
+	}
+	.milestone {
+    display: block;
+    height: 89px;
+    min-height: 89px;
+	}
+	.milestone ul {
+    font-size: 9px;
+	}
+	.swan {
+    margin-top: 0px;
 	}
 }
