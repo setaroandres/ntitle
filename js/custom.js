@@ -2,6 +2,11 @@
 // Set the date we're counting down to
 var countDownDate = new Date("Jan 5, 2018 15:37:25").getTime();
 
+var dayLast = 0;
+var hourLast = 0;
+var minuteLast = 0;
+var secondLast = 0;
+
 // Update the count down every 1 second
 var x = setInterval(function() {
 
@@ -19,9 +24,37 @@ var x = setInterval(function() {
 
   // Display the result in the element with id="demo"
   document.getElementById("days").innerHTML = days;
+  if(dayLast != days){
+    document.getElementById("days").parentElement.style.backgroundColor = "white";
+    setTimeout(function(){ 
+      document.getElementById("days").parentElement.style.backgroundColor = "transparent"; 
+    }, 100);
+    dayLast = days;
+  }
   document.getElementById("hours").innerHTML = hours;
+  if(hourLast != hours){
+    document.getElementById("hours").parentElement.style.backgroundColor = "white";
+    setTimeout(function(){ 
+      document.getElementById("hours").parentElement.style.backgroundColor = "transparent"; 
+    }, 100);
+    hourLast = hours;
+  }
   document.getElementById("minutes").innerHTML = minutes;
+  if(minuteLast != minutes){
+    document.getElementById("minutes").parentElement.style.backgroundColor = "white";
+    setTimeout(function(){ 
+      document.getElementById("minutes").parentElement.style.backgroundColor = "transparent"; 
+    }, 100);
+    minuteLast = minutes;
+  }
   document.getElementById("seconds").innerHTML = seconds;
+  if(secondLast != seconds){
+    document.getElementById("seconds").parentElement.style.backgroundColor = "white";
+    setTimeout(function(){ 
+      document.getElementById("seconds").parentElement.style.backgroundColor = "transparent"; 
+    }, 100);
+    secondLast = seconds;
+  }
 
   // If the count down is finished, write some text 
   if (distance < 0) {
@@ -35,7 +68,7 @@ var player2;
 
 
 function onPlayerReady2(event) {
-  
+
   // bind events
   var playButton2 = document.getElementById("play-button2");
   playButton2.addEventListener("click", function() {
@@ -67,7 +100,7 @@ function onYouTubePlayerAPIReady() {
 }
 
 function onPlayerReady(event) {
-  
+
   // bind events
   var playButton = document.getElementById("play-button");
   playButton.addEventListener("click", function() {
@@ -87,7 +120,21 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
 $(document).ready(function(){
 
-$(".graph-part").mouseover(function(){
+   $('.graph-part').hover(function() {
+
+    $(this).stop().animate({
+      opacity: 1
+    }).parent().parent().parent().find(".graph-part").not(this).stop().animate({
+      opacity: 0.3
+    });
+  }, function() {
+    $(".graph-part").not(this).stop().animate({
+      opacity: 1
+    });
+  });
+
+/*   
+  $(".graph-part").mouseover(function(){
        //console.log($(this).parent().parent().find(".graph-part").not(this));
        $(this).parent().parent().find(".graph-part").not(this).animate({
         opacity: 0.3
@@ -98,7 +145,8 @@ $(".graph-part").mouseover(function(){
 
      });
 
-$(".graph-part").mouseout(function(){
+
+  $(".graph-part").mouseout(function(){
        //console.log($(this).parent().parent().find(".graph-part").not(this));
        $(this).parent().parent().find(".graph-part").not(this).animate({
         opacity: 1
@@ -108,21 +156,52 @@ $(".graph-part").mouseout(function(){
 
        
      });
+*/
 
 
+  $('.mile-item').hover(function() {
 
-$('.mile-item').hover(function() {
-
-  $(this).stop().animate({
-    opacity: 1
-  }).parent().parent().parent().find(".mile-item").not(this).stop().animate({
-    opacity: 0
+    $(this).stop().animate({
+      opacity: 1
+    }).parent().parent().parent().find(".mile-item").not(this).stop().animate({
+      opacity: 0
+    });
+  }, function() {
+    $("#roadmap .mile-item").not(this).stop().animate({
+      opacity: 1
+    });
   });
-}, function() {
-  $("#roadmap .mile-item").not(this).stop().animate({
-    opacity: 1
-  });
-});
+
+  $(window).scroll(function() {
+   var hT = $('#graph').offset().top,
+   hH = $('#graph').outerHeight(),
+   wH = $(window).height(),
+   wS = $(this).scrollTop();
+   if (wS > (hT+hH-wH)){
+     console.log('H1 on the view!');
+     $(".graph-start-up").css("position", "inherit");
+     $(".graph-start-up").animate({
+      top: 0,
+      left: 0
+    }, 2000,function(){
+
+    });
+     $(".graph-start-down").css("position", "inherit");
+     $(".graph-start-down").animate({
+      top: 0,
+      left: 0
+    }, 2000,function(){
+
+    });
+     $(".graph-start-left").css("position", "inherit");
+     $(".graph-start-left").animate({
+      top: 0,
+      left: 0
+    }, 2000,function(){
+
+    });
+   }
+ });
 
 
 });
