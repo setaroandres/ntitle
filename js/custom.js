@@ -25,7 +25,7 @@ var x = setInterval(function() {
   // Display the result in the element with id="demo"
   document.getElementById("days").innerHTML = days;
   if(dayLast != days){
-    document.getElementById("days").parentElement.style.backgroundColor = "white";
+    document.getElementById("days").parentElement.style.backgroundColor = "rgba(255, 255, 255, 0.05)";
     setTimeout(function(){ 
       document.getElementById("days").parentElement.style.backgroundColor = "transparent"; 
     }, 100);
@@ -33,7 +33,7 @@ var x = setInterval(function() {
   }
   document.getElementById("hours").innerHTML = hours;
   if(hourLast != hours){
-    document.getElementById("hours").parentElement.style.backgroundColor = "white";
+    document.getElementById("hours").parentElement.style.backgroundColor = "rgba(255, 255, 255, 0.05)";
     setTimeout(function(){ 
       document.getElementById("hours").parentElement.style.backgroundColor = "transparent"; 
     }, 100);
@@ -41,7 +41,7 @@ var x = setInterval(function() {
   }
   document.getElementById("minutes").innerHTML = minutes;
   if(minuteLast != minutes){
-    document.getElementById("minutes").parentElement.style.backgroundColor = "white";
+    document.getElementById("minutes").parentElement.style.backgroundColor = "rgba(255, 255, 255, 0.05)";
     setTimeout(function(){ 
       document.getElementById("minutes").parentElement.style.backgroundColor = "transparent"; 
     }, 100);
@@ -49,7 +49,7 @@ var x = setInterval(function() {
   }
   document.getElementById("seconds").innerHTML = seconds;
   if(secondLast != seconds){
-    document.getElementById("seconds").parentElement.style.backgroundColor = "white";
+    document.getElementById("seconds").parentElement.style.backgroundColor = "rgba(255, 255, 255, 0.05)";
     setTimeout(function(){ 
       document.getElementById("seconds").parentElement.style.backgroundColor = "transparent"; 
     }, 100);
@@ -175,17 +175,21 @@ $('.graph-part').hover(function() {
 
 
 $('.mile-item').hover(function() {
+  
+  $(this).parent().parent().parent().find(".mile-item").not(this).addClass("go-gray");
 
+  }, function() {
+  $("#roadmap .mile-item").not(this).removeClass("go-gray");
+});
+
+
+/*
   $(this).stop().animate({
     opacity: 1
   }).parent().parent().parent().find(".mile-item").not(this).stop().animate({
     opacity: 0
   });
-}, function() {
-  $("#roadmap .mile-item").not(this).stop().animate({
-    opacity: 1
-  });
-});
+}*/
 /*
 $(window).scroll(function() {
  var hT = $('#graph').offset().top,
