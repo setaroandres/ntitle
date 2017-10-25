@@ -337,6 +337,10 @@ section#graph .section-title {
 	color: #5eb5b8;
 	font-size: 18px;
 }
+.title-news {
+	margin-top: 15px;
+	margin-bottom: 0;
+}
 .date-text,
 .text-news {
 	color: #fff;
@@ -501,6 +505,7 @@ input[type="email"] {
 	padding: 50px;
 	
 }
+<<<<<<< HEAD
 
 /*SLIDER*/
 
@@ -539,7 +544,10 @@ input[type="email"] {
 
 
 /*ICONS SOCIAL EFFECT*/
+=======
+>>>>>>> 7474ff9ed9c1aca3f68295911c908ba863960cb3
 
+/*ICONS SOCIAL EFFECT*/
 
 .row .block {
 	float: left;
@@ -661,6 +669,12 @@ input[type="email"] {
 
 /*RESPONSIVE*/
 
+@media screen and (max-width: 991px) {
+	#documentation .doc-item {
+		margin: 45px 0;
+	}
+}
+
 @media screen and (max-width: 767px) {
 	.container-fluid.gral-wrapper {
 		background: #08293C;
@@ -698,8 +712,16 @@ input[type="email"] {
 	.swan {
 		margin-top: -60px;
 	}
-	#documentation .doc-item {
-		margin: 45px 0;
+	#graphsterms,
+	#team  {
+		background: #08293C; 
+	}
+	#dates, 
+	#news{
+    background: #000;
+	}
+	#dates {
+    padding-top: 55px;
 	}
 }
 
