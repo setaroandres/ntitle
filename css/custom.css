@@ -135,7 +135,7 @@ nav li a:hover{
 /*SUBSCRIBE*/
 #subscribe {
 	background: url("../img/fondo-subscribe.png") ;
-	background-size: cover;
+	background-size: 100% 100%;
 	background-position-y: -1px;
 	padding: 90px 0 35px;
 }
