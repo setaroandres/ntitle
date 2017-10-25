@@ -579,11 +579,16 @@ input[type="email"] {
 }
 
 #footer{
-	background: url("../img/fondo-footer.jpg");
-	background-size: contain;
-	background-repeat: no-repeat;
-	padding: 50px;
-	
+	background: #207683; /* Old Browsers */
+	background: -webkit-radial-gradient(top,#207683,#0b1829); /*Safari 5.1-6*/
+	background: -o-radial-gradient(top,#207683,#0b1829); /*Opera 11.1-12*/
+	background: -moz-radial-gradient(top,#207683,#0b1829); /*Fx 3.6-15*/
+	background: radial-gradient(to bottom, #207683, #0b1829); /*Standard*/
+	padding: 60px 0;
+}
+#footer p {
+	letter-spacing: 1px;
+	margin-bottom: 0;
 }
 
 /*ICONS SOCIAL EFFECT*/
