@@ -42,7 +42,12 @@ nav li a:hover{
 .relative {
 	position: relative;
 }
-.btn-blue{
+.btn-blue {
+	background: #4890e4; /* Old Browsers */
+	background: -webkit-linear-gradient(top left,#4890e4,#2e5bac); /*Safari 5.1-6*/
+	background: -o-linear-gradient(top left,#4890e4,#2e5bac); /*Opera 11.1-12*/
+	background: -moz-linear-gradient(top left,#4890e4,#2e5bac); /*Fx 3.6-15*/
+	background: linear-gradient(top left, #4890e4, #2e5bac); /*Standard*/
 	border-radius: 10px;
 	cursor: pointer;
 	font-size: 18px;
@@ -51,13 +56,32 @@ nav li a:hover{
 	margin: 30px 0 10px;
 	width: 230px;
 }
-.black-button{
+.black-button {
+	background: #4b4b4b; /* Old Browsers */
+	background: -webkit-linear-gradient(top left,#4b4b4b,#353535); /*Safari 5.1-6*/
+	background: -o-linear-gradient(top left,#4b4b4b,#353535); /*Opera 11.1-12*/
+	background: -moz-linear-gradient(top left,#4b4b4b,#353535); /*Fx 3.6-15*/
+	background: linear-gradient(top left, #4b4b4b, #353535); /*Standard*/
 	border: 4px solid #fff;
 	border-radius: 10px;
 	background: #808080;
 	width: 245px;
 	height: 85px;
 	cursor: pointer;
+}
+.btn-blue:hover {
+	background: #4890e4; /* Old Browsers */
+	background: -webkit-linear-gradient(top left,#2e5bac,#4890e4); /*Safari 5.1-6*/
+	background: -o-linear-gradient(top left,#2e5bac,#4890e4); /*Opera 11.1-12*/
+	background: -moz-linear-gradient(top left,#2e5bac,#4890e4); /*Fx 3.6-15*/
+	background: linear-gradient(top left,#2e5bac,#4890e4); /*Standard*/
+}
+.black-button:hover {
+	background: #4b4b4b; /* Old Browsers */
+	background: -webkit-linear-gradient(top left,#353535,#4b4b4b); /*Safari 5.1-6*/
+	background: -o-linear-gradient(top left,#353535,#4b4b4b); /*Opera 11.1-12*/
+	background: -moz-linear-gradient(top left,#353535,#4b4b4b); /*Fx 3.6-15*/
+	background: linear-gradient(top left,#353535,#4b4b4b); /*Standard*/
 }
 .regular-text {
 	color: #fff;
@@ -268,8 +292,9 @@ section#join {
 }
 /*DOCUMENTATION*/
 #documentation .btn-blue {
-	margin-top: 25px;
 	height: 62px;
+	font-size: 12px;
+	margin-top: 25px;
 	width: 100%;
 }
 #documentation a{
