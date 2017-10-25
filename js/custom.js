@@ -120,18 +120,18 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
 $(document).ready(function(){
 
-window.sr = ScrollReveal();
-sr.reveal('.graph-part');
-sr.reveal('.section-title');
-sr.reveal('.regular-text');
-sr.reveal('.img-fluid');
+  window.sr = ScrollReveal();
+  sr.reveal('.graph-part');
+  sr.reveal('.section-title');
+  sr.reveal('.regular-text');
+  sr.reveal('.img-fluid');
 //sr.reveal('.bar');
 
 $('nav li').mouseenter(function(){
 
   $(this).find('.animate').animate({
     width: '100%'
-}, 100);
+  }, 100);
 });
 $('nav li').mouseout(function(){
   $(this).find('.animate').animate({ 
@@ -144,15 +144,23 @@ $('nav li').mouseout(function(){
   });
 });
 
- $('.graph-part').hover(function() {
-        $(this).parent().parent().parent().find(".graph-part").not(this).addClass('transition');
-    
-    }, function() {
-        $(this).parent().parent().parent().find(".graph-part").not(this).removeClass('transition');
-    });
+$(".carousel .item").click(function(){
+  var url = $(this).data("url");
+  var iframe = "<iframe width='747' height='428' src='" + url + "?enablejsapi=1&html5=1&output=embed' frameborder='0' id='video2' allowfullscreen></iframe>";
+  $("#conferences .video-container iframe").remove();
+  $("#conferences .video-container").append(iframe);
+
+});
 
 $('.graph-part').hover(function() {
-   
+  $(this).parent().parent().parent().find(".graph-part").not(this).addClass('transition');
+
+}, function() {
+  $(this).parent().parent().parent().find(".graph-part").not(this).removeClass('transition');
+});
+
+$('.graph-part').hover(function() {
+
   $(this).stop().animate({
     opacity: 1
   }).parent().parent().parent().find(".graph-part").not(this).stop().animate({
