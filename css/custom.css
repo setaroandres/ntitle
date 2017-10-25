@@ -173,9 +173,9 @@ section#join {
 	position: absolute;
 	
 	background: url('../img/btn-video.png');
-	    width: 112px;
-    height: 120px;
-    background-repeat: no-repeat;
+	width: 112px;
+	height: 120px;
+	background-repeat: no-repeat;
 }
 .button-video:hover{
 	background: url('../img/btn-video-over.png');
@@ -501,125 +501,162 @@ input[type="email"] {
 	padding: 50px;
 	
 }
+
+/*SLIDER*/
+
+.slider {
+	width: 50%;
+	margin: 100px auto;
+}
+
+.slick-slide {
+	margin: 0px 20px;
+}
+
+.slick-slide img {
+	width: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+	color: black;
+}
+
+
+.slick-slide {
+	transition: all ease-in-out .3s;
+	opacity: .2;
+}
+
+.slick-active {
+	opacity: .5;
+}
+
+.slick-current {
+	opacity: 1;
+}
+
+
+
 /*ICONS SOCIAL EFFECT*/
 
 
 .row .block {
-    float: left;
-    width: 25%;
-    height: 150px;
+	float: left;
+	width: 25%;
+	height: 150px;
 }
 .hovicon {
-    display: inline-block;
-    font-size: 45px;
-    line-height: 90px;
-    cursor: pointer;
-    margin: 20px;
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    text-align: center;
-    position: relative;
-    text-decoration: none;
-    z-index: 1;
-    color: #fff;
+	display: inline-block;
+	font-size: 45px;
+	line-height: 90px;
+	cursor: pointer;
+	margin: 20px;
+	width: 90px;
+	height: 90px;
+	border-radius: 50%;
+	text-align: center;
+	position: relative;
+	text-decoration: none;
+	z-index: 1;
+	color: #fff;
 }
 .hovicon.small {
-    font-size: 20px;
-    line-height:45px;
-    width:45px;
-    height:45px;
-    margin:7px;
+	font-size: 20px;
+	line-height:45px;
+	width:45px;
+	height:45px;
+	margin:7px;
 }
 .hovicon.mini {
-    font-size: 15px;
-    line-height:32px;
-    width:30px;
-    height:30px;
-    margin:7px;
+	font-size: 15px;
+	line-height:32px;
+	width:30px;
+	height:30px;
+	margin:7px;
 }
 .hovicon.auto-width {
-    width: auto;
-    height: auto;
-    padding: 15px;
+	width: auto;
+	height: auto;
+	padding: 15px;
 }
 .hovicon:after {
-    pointer-events: none;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    content:'';
-    -webkit-box-sizing: content-box;
-    -moz-box-sizing: content-box;
-    box-sizing: content-box;
+	pointer-events: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	content:'';
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
 }
 .hovicon:before {
-    speak: none;
-    font-size: 48px;
-    line-height: 90px;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    display: block;
-    -webkit-font-smoothing: antialiased;
+	speak: none;
+	font-size: 48px;
+	line-height: 90px;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	display: block;
+	-webkit-font-smoothing: antialiased;
 }
 
 /* Effect 7 */
- .hovicon.effect-7 {
-    box-shadow: 0 0 0 4px rgba(255, 255, 255, 1);
-    -webkit-transition: background 0.2s, color 0.2s;
-    -moz-transition: background 0.2s, color 0.2s;
-    transition: background 0.2s, color 0.2s;
+.hovicon.effect-7 {
+	box-shadow: 0 0 0 4px rgba(255, 255, 255, 1);
+	-webkit-transition: background 0.2s, color 0.2s;
+	-moz-transition: background 0.2s, color 0.2s;
+	transition: background 0.2s, color 0.2s;
 }
 .hovicon.effect-7:hover{
-    box-shadow: 0 0 0 4px rgba(36, 92, 176, 1);
-    color: rgba(36, 92, 176, 1);
+	box-shadow: 0 0 0 4px rgba(36, 92, 176, 1);
+	color: rgba(36, 92, 176, 1);
 }
 
 .hovicon.effect-7:after {
-    top: -8px;
-    left: -8px;
-    padding: 8px;
-    z-index: -1;
-    opacity: 0;
+	top: -8px;
+	left: -8px;
+	padding: 8px;
+	z-index: -1;
+	opacity: 0;
 }
 
 /* Effect 7b */
- .hovicon.effect-7.sub-b:after {
-    box-shadow: 3px 3px rgba(36, 92, 176, 1);
-    -webkit-transform: rotate(-180deg);
-    -moz-transform: rotate(-180deg);
-    -ms-transform: rotate(-180deg);
-    transform: rotate(-180deg);
-    -webkit-transition: opacity 0.2s, -webkit-transform 0.2s;
-    -moz-transition: opacity 0.2s, -moz-transform 0.2s;
-    transition: opacity 0.2s, transform 0.2s;
+.hovicon.effect-7.sub-b:after {
+	box-shadow: 3px 3px rgba(36, 92, 176, 1);
+	-webkit-transform: rotate(-180deg);
+	-moz-transform: rotate(-180deg);
+	-ms-transform: rotate(-180deg);
+	transform: rotate(-180deg);
+	-webkit-transition: opacity 0.2s, -webkit-transform 0.2s;
+	-moz-transition: opacity 0.2s, -moz-transform 0.2s;
+	transition: opacity 0.2s, transform 0.2s;
 }
 .hovicon.effect-7.sub-b:hover:after {
-    opacity: 1;
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    transform: rotate(90deg);
+	opacity: 1;
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	transform: rotate(90deg);
 }
 .hovicon.effect-7.sub-b:before {
-    -webkit-transform: scale(0.8);
-    -moz-transform: scale(0.8);
-    -ms-transform: scale(0.8);
-    transform: scale(0.8);
-    opacity: 0.7;
-    -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
-    -moz-transition: -moz-transform 0.2s, opacity 0.2s;
-    transition: transform 0.2s, opacity 0.2s;
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	-ms-transform: scale(0.8);
+	transform: scale(0.8);
+	opacity: 0.7;
+	-webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+	-moz-transition: -moz-transform 0.2s, opacity 0.2s;
+	transition: transform 0.2s, opacity 0.2s;
 }
 .hovicon.effect-7.sub-b:hover:before {
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);
-    opacity: 1;
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+	opacity: 1;
 }
 
 /*RESPONSIVE*/
@@ -656,7 +693,7 @@ input[type="email"] {
 	.milestone {
 		display: block;
 		height: 185px;
-    min-height: 185px;
+		min-height: 185px;
 	}
 	.swan {
 		margin-top: -60px;
@@ -693,14 +730,14 @@ input[type="email"] {
 		padding: 15px;
 	}
 	.milestone {
-    display: block;
-    height: 89px;
-    min-height: 89px;
+		display: block;
+		height: 89px;
+		min-height: 89px;
 	}
 	.milestone ul {
-    font-size: 9px;
+		font-size: 9px;
 	}
 	.swan {
-    margin-top: 0px;
+		margin-top: 0px;
 	}
 }
