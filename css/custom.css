@@ -15,6 +15,10 @@ nav li a{
 nav li a:hover{
 	color: #3666ab;
 }
+#chartdiv a{
+	display: none;
+}
+
 .paralax{
 	/*background-attachment: fixed!important;*/
 

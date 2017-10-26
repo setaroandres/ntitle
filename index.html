@@ -579,38 +579,25 @@
 <section id="graph">
   <div class="container">
     <div class="row justify-content-center">
-      <div class="col-12 col-md-5 graph-dynamic">
+      <div class="col-10 graph-dynamic">
         <h2 class="section-title">TOKEN <br /> DISTRIBUTION</h2>
         <div class="row relative">    
           <div class="logo-centered">
             <img src="img/graph-logo.png" class="img-fluid">
           </div>
-          <div class="col-6 no-gutter">
-            <img src="img/graph1-amarillo.png" class="img-fluid graph-part">
-          </div> 
-          <div class="col-6 no-gutter">
-            <img src="img/graph1-rosa.png" class="img-fluid graph-part">
-          </div> 
-          <div class="col-12 no-gutter">
-            <img src="img/graph1-verde.png" class="img-fluid graph-part">
-          </div> 
+          <div id="chartdiv" style="width: 100%; height: 450px;" ></div>
         </div> 
       </div> 
-      <div class="col-12 col-md-5 graph-dynamic">
+    </div> 
+    <div class="row justify-content-center">
+      <div class="col-10 graph-dynamic">
         <h2 class="section-title">USE OF <br /> PROCEEDS</h2>
         <div class="row relative">    
           <div class="logo-centered">
             <img src="img/graph-logo.png" class="img-fluid">
           </div>
-          <div class="col-12 no-gutter">
-            <img src="img/graph2-verde.png" class="img-fluid graph-part">
-          </div> 
-          <div class="col-6 no-gutter">
-            <img src="img/graph2-amarillo.png" class="img-fluid graph-part">
-          </div> 
-          <div class="col-6 no-gutter">
-            <img src="img/graph2-rosa.png" class="img-fluid graph-part">
-          </div> 
+          <div id="chartdiv2" style="width: 100%; height: 450px;" ></div>
+
         </div>
       </div>  
     </div>    
@@ -904,38 +891,167 @@
 
 <script type="text/javascript">
 
-  $('[data-toggle="popover"]').popover();
+$('[data-toggle="popover"]').popover();
 
 </script>
 
 <script src="js/slick.min.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript">
-  $(document).ready(function() {
+$(document).ready(function() {
 
-    $(".regular").slick({
-      dots: true,
-      infinite: true,
-      slidesToShow: 3,
-      slidesToScroll: 3,
-      prevArrow: $('.arrow.prev'),
-      nextArrow: $('.arrow.next'),
-      responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true
-        }
+  $(".regular").slick({
+    dots: true,
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    prevArrow: $('.arrow.prev'),
+    nextArrow: $('.arrow.next'),
+    responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true
       }
+    }
     // You can unslick at a given breakpoint now by adding:
     // settings: "unslick"
     // instead of a settings object
     ]
   });
 
-  });
+});
+</script>
+
+<script type="text/javascript" src="js/amcharts.js"></script>
+<script type="text/javascript" src="https://cdn.amcharts.com/lib/3/pie.js"></script>
+<script type="text/javascript" src="https://www.amcharts.com/lib/3/themes/chalk.js"></script>
+<script type="text/javascript">
+AmCharts.makeChart("chartdiv",
+{
+  "type": "pie",
+  "balloonText": "",
+  "innerRadius": 120,
+  "labelRadiusField": "country",
+  "labelText": "[[title]] [[percents]]%",
+  "minRadius": 18,
+  "pullOutRadius": "16%",
+  "startAngle": 198,
+  "alphaField": "litres",
+  "classNameField": "country",
+  "outlineThickness": 0,
+  "pullOutEffect": "easeOutSine",
+  "startAlpha": 0.45,
+  "startDuration": 1,
+  "startEffect": "easeOutSine",
+  "titleField": "country",
+  "valueField": "litres",
+  "color": "#FFFFFF",
+  "colorField": "color",
+  "labelColorField": "color",
+  "fontFamily": "helvetica",
+  "fontSize": 12,
+  "handDrawn": false,
+  "handDrawScatter": 0,
+  "handDrawThickness": 0,
+  "theme": "chalk",
+  "allLabels": [],
+  "balloon": {},
+  "titles": [],
+  "dataProvider": [
+  {
+    "country": "SOFTWARE DEVELOPMENT",
+    "litres": "70.0",
+    "color": "#4becfa"
+  },
+  {
+    "country": "MARKETING AND BUSINESS",
+    "litres": "15.0",
+    "color": "#dd0097"
+  },
+  {
+    "country": "OPERATIONAL EXPENSE",
+    "litres": "5.0",
+    "color": "#2fffbd"
+  },
+  {
+    "country": "LEGAL EXPENSE",
+    "litres": "5.0",
+    "color": "#f2b625"
+  },
+  {
+    "country": "MISC AND UNESPECTED",
+    "litres": "5.0",
+    "color": "#cef225"
+  }
+  ]
+}
+);
+</script>
+<!-- amCharts javascript code -->
+<script type="text/javascript">
+AmCharts.makeChart("chartdiv2",
+{
+  "type": "pie",
+  "balloonText": "",
+  "innerRadius": 120,
+  "labelRadiusField": "country",
+  "labelText": "[[title]] [[percents]]%",
+  "minRadius": 18,
+  "pullOutRadius": "16%",
+  "startAngle": 198,
+  "alphaField": "litres",
+  "classNameField": "country",
+  "outlineThickness": 0,
+  "pullOutEffect": "easeOutSine",
+  "startAlpha": 0.45,
+  "startDuration": 1,
+  "startEffect": "easeOutSine",
+  "titleField": "country",
+  "valueField": "litres",
+  "color": "#FFFFFF",
+  "colorField": "color",
+  "labelColorField": "color",
+  "fontFamily": "helvetica",
+  "fontSize": 12,
+  "handDrawn": false,
+  "handDrawScatter": 0,
+  "handDrawThickness": 0,
+  "theme": "chalk",
+  "allLabels": [],
+  "balloon": {},
+  "titles": [],
+  "dataProvider": [
+  {
+    "country": "SOFTWARE DEVELOPMENT",
+    "litres": "70.0",
+    "color": "#4becfa"
+  },
+  {
+    "country": "MARKETING AND BUSINESS",
+    "litres": "15.0",
+    "color": "#dd0097"
+  },
+  {
+    "country": "OPERATIONAL EXPENSE",
+    "litres": "5.0",
+    "color": "#2fffbd"
+  },
+  {
+    "country": "LEGAL EXPENSE",
+    "litres": "5.0",
+    "color": "#f2b625"
+  },
+  {
+    "country": "MISC AND UNESPECTED",
+    "litres": "5.0",
+    "color": "#cef225"
+  }
+  ]
+}
+);
 </script>
 
 <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
